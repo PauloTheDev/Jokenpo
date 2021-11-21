@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="shortcut icon" href="img/sinais1/tesoura-removebg-preview.png" type="image/x-icon">
+    <audio src="audios/theme.mp3" autoplay loop></audio>
+
+</head>
+<body class='bg-gray-600'>
+    <div id="titles" class='text-center text-white font-extrabold text-6xl'>
+        <h1>Jokenpô</h1>
+        <h2 class='text-base'>Pedra, Papel, Tesoura</h2>
+    </div>
+
+    <main class='flex-col w-screen items-center justify-center p-10'>
+                        <!--PLAYER AREA SELECT-->
+        <div id="player" class='flex justify-center'>
+            <img class='arrow'id='arrow-left' src="img/icons/arrowLeft.svg" alt="">
+                <nav>
+                    <img class='w-20'id='img-player-1' src="img/sinais2/papel-removebg-preview.png" alt="">
+                    <img class='w-20 hidden' id='img-player-2' src="img/sinais2/pedra-removebg-preview.png" alt="">
+                    <img class='w-20 hidden' id='img-player-3' src="img/sinais2/tesoura-removebg-preview.png" alt="">
+                </nav>
+            <img class='arrow' id='arrow-right' src="img/icons/arrowRight.svg" alt="">
+        </div>
+
+        <img class='w-1/5 m-auto' src="img/icons/x.svg" alt="">
+                         <!--MACHINE AREA-->
+        <div id="machine" class='flex justify-center'>
+            <nav>
+                <img class='w-16 hidden' id='machine-img-1' src="img/sinais1/papel-removebg-preview (1).png" alt="">
+                <img class='w-16 hidden' id='machine-img-2' src="img/sinais1/pedra-removebg-preview.png" alt="">
+                <img class='w-16 hidden' id='machine-img-3' src="img/sinais1/tesoura-removebg-preview.png" alt="">
+            </nav>
+        </div>
+
+        <button class='text-white   bg-green-700 w-full h-7 border-2 border-gray-700 font-bold'>JOGAR!</button>
+    </main>
+
+    <h1 class='text-center font-bold text-3xl' id='status'></h1>
+    <footer class='text-white text-center w-1/2 m-auto '>
+        <h3 class='text-yellow-300'>Projeto ainda não finalizado</h3>
+        <br>
+        <h4>Feito por<a class='text-green-500 font-bold' href="https://www.instagram.com/opaulo.oficial/"> @opaulo_oficial</a></h4>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

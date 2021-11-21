@@ -1,0 +1,11 @@
+@tailwind base;
+
+
+
+.arrow{
+    @apply w-1/6 transition duration-200 hover:bg-gray-800 rounded-full bg-opacity-30 lg: w-36 mx-10
+}
+
+@tailwind components;
+@tailwind utilities;
+
